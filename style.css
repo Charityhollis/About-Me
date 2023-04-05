@@ -10,7 +10,7 @@ body { text-align: center;
 }
 
 
-input[type="submit"] {
+input[type="submit"]:hover {
     padding: 5px;
     background: lightblue;
     border: 0 none;
@@ -36,6 +36,19 @@ input[placeholder="Email"]:focus {
     -webkit-text-fill-color: blue;
 }
 
+textarea {
+    width: 100%;
+    height:100px
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    resize: none;
+}
+
+form:hover {
+
+}
+
 ol {
     list-style-type: upper-roman; 
     list-style-position: inside;
@@ -53,4 +66,39 @@ a:link {
 
 a:visited {
     color: white;
+}
+
+ .sidebar {
+    width: 150px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    text-align: left;
+    position:fixed;
+    padding-top: 40px; 
+ }
+
+ .wrapper { 
+    display:flex;
+    position:relative;
+ }
+
+ .wrapper .sidebar {
+    width: 200px;
+    height: 100%;
+    background: transparent; 
+}
+
+.wrapper .sidebar h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .sidebar ul li a{
+    color: blueviolet;
+    display: block;
+}
+
+.wrapper.sidebar ul li:hover{
+    background: lightpink; 
 }
